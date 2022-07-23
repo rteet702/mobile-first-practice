@@ -71,9 +71,10 @@ li {
 
 .sidebar {
     position: fixed;
+    padding-top: 3rem;
 
     left: auto;
-    right: 0px;
+    right: -10px;
 
     width: 0px;
     height: 100vh;
@@ -81,8 +82,16 @@ li {
     background-color: var(--color-header);
     border: var(--border);
     box-shadow: var(--shadow);
+
+    transition: width 0.3s;
 }
 
+.nav-items-sidebar .nav-tab {
+    font-size: 3rem;
+    margin: 3rem 0px;
+
+    text-align: center;
+}
 /* Card */
 .card {
     width: 100%;
@@ -106,4 +115,24 @@ li {
 
 .card-body p {
     margin: 1rem 0px;
+}
+
+/* Media Queries??? */
+@media(min-width:768px) {
+    .nav-items {
+        display: flex;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        margin: 0px auto;
+    }
 }
