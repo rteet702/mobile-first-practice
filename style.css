@@ -116,9 +116,9 @@ body {
 }
 /* Card */
 .card {
-    width: 100%;
+    width: 90%;
 
-    margin: 3rem 0px;
+    margin: 3rem auto;
 
     background-color: var(--color-main);
     box-shadow: var(--shadow);
@@ -213,6 +213,7 @@ body {
 
     .card {
         margin: 3rem 0px;
+        width: 100%;
     }
 
     .card-img {
