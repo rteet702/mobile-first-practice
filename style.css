@@ -58,7 +58,6 @@ body {
 
 .nav-items {
     display: none;
-    align-items: center;
 }
 
 .nav-tab {
@@ -129,7 +128,7 @@ body {
     font-size: 2rem;
     padding: 2rem;
 
-    background-color: var(--color-header);
+    background-image: linear-gradient(rgb(255, 190, 68), var(--color-header));
 }
 
 .card-body {
@@ -142,7 +141,7 @@ body {
 
 .card-img {
     display: block;
-    width: 80%;
+    width: 100%;
     max-width: 650px;
 
     border: var(--border);
@@ -187,8 +186,16 @@ body {
         justify-content: center;
     }
 
+    .nav-tab {
+        margin: 0px 3rem;
+    }
+
     .card {
         margin: 3rem 0px;
+    }
+
+    .card-img {
+        width: 80%;
     }
 
     .r-col {
