@@ -17,10 +17,16 @@ li {
 
 /* Global Colors */
 :root {
-    --color-header: lightcyan;
+    --color-header: rgb(255, 216, 143);
+    --color-main: rgb(230, 230, 230);
+    --color-bg: rgb(200, 200, 200);
     --border: 1px solid white;
     --shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
 
+}
+
+body {
+    background-color: var(--color-bg) !important;
 }
 
 /* Mobile Default Style */
@@ -40,7 +46,7 @@ li {
     top: 0px;
     left: 0px;
 
-    background-color: gainsboro;
+    background-color: var(--color-main);
     border-bottom: var(--border);
     box-shadow: var(--shadow);
     z-index: 3;
@@ -93,9 +99,9 @@ li {
     width: 0px;
     height: 100vh;
 
-    background-color: var(--color-header);
+    background-color: var(--color-main);
     border: var(--border);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow), inset 0px 0px 0px 5px var(--color-header);
     z-index: 1;
 
     transition: width 0.3s;
@@ -113,7 +119,9 @@ li {
 
     margin: 3rem 0px;
 
+    background-color: var(--color-main);
     box-shadow: var(--shadow);
+    border: var(--border);
 }
 
 .card-header {
@@ -125,7 +133,7 @@ li {
 }
 
 .card-body {
-    padding: 2rem;
+    padding: 2rem 5rem;
 
     display: flex;
     flex-direction: column;
@@ -137,6 +145,8 @@ li {
     width: 80%;
     max-width: 650px;
 
+    border: var(--border);
+
     margin: 3rem 0px;
 }
 
@@ -144,8 +154,18 @@ li {
     margin: 1rem 0px;
 }
 
+.subject-header {
+    text-align: center;
+
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+
+    border-bottom: 1px dashed black;
+    width: 80%;
+}
+
 /* Media Queries??? */
-@media(min-width:768px) {
+@media(min-width:1024px) {
     .nav-items {
         display: flex;
     }
@@ -172,6 +192,6 @@ li {
     }
 
     .r-col {
-        margin: 0px 3rem;
+        margin: 0px 1.5rem;
     }
 }
