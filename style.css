@@ -17,9 +17,9 @@ li {
 
 /* Global Colors */
 :root {
-    --color-header: gainsboro;
+    --color-header: lightcyan;
     --border: 1px solid white;
-    --shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    --shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -75,9 +75,12 @@ li {
     width: 100%;
     height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: black;
     visibility: hidden;
+    opacity: 0;
     z-index: 0;
+
+    transition: opacity 0.2s;
 }
 
 .sidebar {
@@ -123,6 +126,18 @@ li {
 
 .card-body {
     padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    display: block;
+    width: 80%;
+    max-width: 650px;
+
+    margin: 3rem 0px;
 }
 
 .card-body p {
@@ -144,7 +159,19 @@ li {
     }
 
     .wrapper {
-        max-width: 1200px;
+        max-width: 1600px;
         margin: 0px auto;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 3rem 0px;
+    }
+
+    .r-col {
+        margin: 0px 3rem;
     }
 }
