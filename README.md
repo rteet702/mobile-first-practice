@@ -8,8 +8,3 @@ A practice project for a few concepts:
 ## Authors
 
 Robert Teets
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
